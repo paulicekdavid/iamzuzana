@@ -1,0 +1,311 @@
+@font-face {
+    font-family: Switzer;
+    src: url(Switzer_Complete/Fonts/WEB/fonts/Switzer-Variable.woff2);
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #ffffff inset;
+  -webkit-text-fill-color: rgb(0, 0, 0);
+  border-color: #ffffff;
+  font-family: "Switzer", sans-serif;
+  transition: background-color 0s;
+}
+
+
+
+.break-kontakt-1 {
+  height: 22vh;
+  width: 100%;
+}
+
+h3 {
+  font-family: "Switzer", sans-serif;
+    font-weight: 450;
+    font-size: 15px;
+}
+
+
+.h1-kontakt{
+  font-family: "roc-grotesk-wide", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  margin-top: 20vh;
+  display: flex;
+  align-items: flex-end; 
+  padding-bottom: 20px;
+  margin-left: 30px;
+  font-size: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+@media only screen and (max-width: 500px) {
+.h1-kontakt {
+  font-size: 6vw;
+  margin-left: 15px;
+}
+}
+
+
+.contact-container {
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Switzer", sans-serif;
+  
+}
+
+
+.contact-container textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contact-container button {
+  all: unset;
+  cursor: pointer;
+}
+
+.contact-container {
+  margin-left: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 500px) {
+.contact-container {
+    margin-left: 15px;
+}
+}
+
+
+
+
+.inputs {
+  height: 60px;
+  width: 45vw;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1.5px solid;
+  color: #ffffff;;
+  background-color: transparent;
+  appearance: none;
+  outline: none;
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  font-size: 15px;
+  font-family: "Switzer", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  padding-left: 2%;
+  justify-content: center;
+}
+
+
+
+.textarea {
+  min-height: 100px;
+  width: 45vw;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1.5px solid;
+  color: #ffffff;;
+  background-color: transparent;
+  appearance: none;
+  outline: none;
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Switzer", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  padding-left: 2%;
+  padding-top: 2%;
+  align-items: top;
+  justify-content: top;
+}
+  
+
+
+@media only screen and (max-width: 900px) {
+.inputs {
+  width: 90vw;
+  padding-left: 5%;
+
+
+}
+}
+
+@media only screen and (max-width: 900px) {
+.textarea {
+  width: 90vw;
+
+
+}
+}
+
+
+
+.sekce-kontakt {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12vw;
+
+}
+
+@media only screen and (max-width: 900px) {
+  .sekce-kontakt {
+    flex-direction: column;
+
+  }
+}
+
+.form {
+  align-items: center;
+  justify-content: center;
+}
+
+.obr-kontakt {
+  margin-left: 30px;
+  width: 15vw;
+  object-fit: contain;
+  height: auto;
+  margin-top: 14px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+.obr-kontakt {
+  width: 40vw;
+}
+}
+
+@media only screen and (max-width: 500px) {
+.obr-kontakt {
+  margin-left: 15px;
+
+
+}
+}
+
+
+.option {
+  height: 60px;
+  width: 45vw;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1.5px solid;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#source {
+  background-color: transparent;
+  border: none;
+  appearance: none;
+  outline: none;
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  height: 100%;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Switzer", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  padding-left: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+#sipka2 {
+  height: 10px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.option .sipka2-container {
+  margin-right: 20px;
+  width: 50px;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#source option {
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+.option {
+  width: 90vw;
+
+
+}
+}
+
+
+
+.break-contact-form {
+  height: 305px;
+}
+
+
+
+
+.br-kontakt-mobil{
+display:none;
+}
+
+.br-kontakt-desktop{
+display: inline;
+}
+
+@media (max-width: 890px){
+.br-kontakt-mobil{
+display: inline;
+}
+}
+
+@media (max-width: 890px){
+.br-kontakt-desktop {
+display: none;
+}
+}
+
+textarea::placeholder {
+  color: #ffffff;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+/* Třída, kterou přidá JS */
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
