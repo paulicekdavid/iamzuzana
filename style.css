@@ -44,7 +44,7 @@ body {
 }
 
 #navbar-contact {
-  background-color: #ff6f6a;
+  background-color: #3BCC8B;
 }
 
 
@@ -107,11 +107,11 @@ body {
 }
 
 .kontakt #navbarodkazy {
-  background-color: #ff6f6a;
+  background-color: #3BCC8B;
 }
 
 .o-mne #navbarodkazy {
-  background-color: #ff6f6a;
+  background-color: #3BCC8B;
 }
 
 #navbarodkazy{
@@ -360,6 +360,14 @@ padding-top: 28px;
   .br-desktop {
     display: none;
   }
+ 
+}
+
+@media only screen and (min-width: 770px) {
+  .br-mobile {
+    display: none;
+  }
+ 
 }
 
 
