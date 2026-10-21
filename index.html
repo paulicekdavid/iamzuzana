@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jsem osobní fitness trenér z Hradce Králové. Pomáhám ženám cítit se spokojeně a sebevědomě ve svém těle.">
+    <meta name="description" content="Osobní fitness trenér z Hradce Králové. Pomáhám ženám cítit se spokojeně a sebevědomě ve svém těle. Domluv si úvodní trénink v Extrifit Gym.">
     <title>Zuzana Paulíčková | Osobní fitness trenér pro ženy | Hradec Králové</title>
     
 
@@ -42,7 +42,36 @@
 <script src="script.js" defer></script>
 
 
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Zuzana Paulíčková - Osobní fitness trenér pro ženy",
+  "image": "https://iamzuzana.cz/IMG_9701.jpg",
+  "url": "https://iamzuzana.cz/",
+  "email": "hello@iamzuzana.cz",
+  "address": {
+    "@type": "PostalAddress",
+    "name": "Extrifit Gym",
+    "addressLocality": "Hradec Králové",
+    "addressCountry": "CZ"
+  },
+  "description": "Osobní fitness tréninky pro ženy v Hradci Králové zaměřené na kondici, sílu a zdravé sebevědomí."
+}
+</script>
+
+
 </head>
+
+
+
+
+
 <body class="homepage">
 
 
@@ -55,7 +84,6 @@
 
         
             <div id="navbarodkazy">
-            <a class="navbar-text" href="o-mne.html">O mně</a>
             <a class="navbar-text" href="kontakt.html">Kontakt</a>
             </div>
        
@@ -89,7 +117,7 @@
 
         <div class="profile-image-container">
 
-          <img src="IMG_9701.jpg" alt="Zuzana - osobní fitness trenérka" class="profile-image">
+          <img src="IMG_9701.jpg" alt="Zuzana - osobní fitness trenér" class="profile-image">
 
         </div>
 
@@ -152,21 +180,22 @@
          <div class="footertext">
 
 
-                <div class="info">
-
-                    <address>
-                        Fitness trenér pro ženy
-                    <br>
-                        Zuzana Paulíčková
-                    <br>
-                        hello@iamzuzana.cz
-                    <br>
-                        Extrifit Hradec Králové
-                    </address>
-
-
-
-                </div>
+<div class="info">
+    <address itemscope itemtype="https://schema.org/LocalBusiness">
+        
+        <strong>Osobní fitness trenér pro ženy</strong><br>
+        <span>Zuzana Paulíčková</span><br>
+        
+        <!-- Klikatelný e-mail -->
+        <a href="mailto:hello@iamzuzana.cz" itemprop="email">hello@iamzuzana.cz</a><br>
+        
+        <!-- Místo působení / Adresa -->
+        <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="name">Extrifit Gym</span>, 
+            <span itemprop="addressLocality">Hradec Králové</span>
+        </span>
+    </address>
+</div>
 
 
 
@@ -201,18 +230,7 @@
 
 
 
-                <div class="odkaz">
 
-                    <div>
-                        <img src="sipka_1.svg" alt="" class="sipka">
-                    </div>
-
-                    <div>
-                        <a href="">o mně</a>
-                    </div>
-            
-                </div>
-            </div>
 
 
             

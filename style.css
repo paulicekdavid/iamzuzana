@@ -22,6 +22,12 @@ body {
 
 
 
+
+strong {
+    font-weight: normal;
+}
+
+
 #logo {
   height: 30px;
   margin-top: 16px;
