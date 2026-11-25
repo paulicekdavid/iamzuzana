@@ -53,22 +53,6 @@
 
 
 
-
-
-
-
-
-h1 {
-  color: #ffffff;
-  font-family: "Switzer", sans-serif; 
-  font-weight: 450;
-  font-size: 16px;
-  line-height: 1.5;
-  margin: 0;
-  margin-bottom: 50px;
-}
-
-
 h2 {
   font-family: "roc-grotesk-wide", sans-serif;
   font-weight: 800;
@@ -82,6 +66,24 @@ h2 {
   text-transform: uppercase;
   line-height: 1.1;
 }
+
+
+
+
+
+
+h1, .h2-hero {
+  all: unset;
+  color: #ffffff;
+  font-family: "Switzer", sans-serif; 
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+
 
 
 .profile-hero {
@@ -198,3 +200,27 @@ h2 {
 
 
 
+
+
+
+
+
+
+/* Obal, kterému nastavíš maximální šířku (např. 450px) */
+.seo-heading {
+  display: block; 
+  max-width: 450px; /* Tady si nastavíš přesnou šířku bloku textu */
+}
+
+/* Samotné nadpisy zůstanou řádkové, aby navazovaly v jedné větě */
+.seo-heading h1,
+.seo-heading h2 {
+  display: inline;
+  font-family: "Switzer", sans-serif;
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
