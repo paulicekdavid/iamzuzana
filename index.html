@@ -47,23 +47,6 @@
 
 
 
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "zkf33r19yq");
-</script>
-
-<!-- Jednoduchá Cookie lišta + podmíněné spuštění Clarity -->
-<div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; right:0; background:#222; color:#fff; padding:15px; text-align:center; z-index:9999; font-family:sans-serif; font-size:14px;">
-  Tento web používá analytické cookies (Microsoft Clarity) pro zlepšování obsahu.
-  <button onclick="acceptCookies()" style="margin-left:10px; padding:6px 14px; background:#4CAF50; color:white; border:none; border-radius:4px; cursor:pointer;">Souhlasím</button>
-  <button onclick="declineCookies()" style="margin-left:5px; padding:6px 14px; background:#555; color:white; border:none; border-radius:4px; cursor:pointer;">Odmítám</button>
-</div>
-
-
-
 <style>
   #cookie-card {
     display: none;
@@ -145,33 +128,39 @@
   </div>
 </div>
 
-<script>
-  // VLOŽ SVÉ ID Z CLARITY
-  const CLARITY_ID = "TVOJE_CLARITY_ID";
+<script type="text/javascript">
+  function startClarity() {
+    if (window.clarityStarted) return;
+    window.clarityStarted = true;
 
-  function loadClarity() {
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://clarity.ms"+i;
-        y=l.getElementsByTagName(r);y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", CLARITY_ID);
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "zkt1g5xoyh");
+
+    window.clarity('consentv2', {
+      ad_Storage: "denied",
+      analytics_Storage: "granted"
+    });
   }
 
   function handleCookieConsent(choice) {
     localStorage.setItem("cookie_consent", choice);
     document.getElementById("cookie-card").style.display = "none";
     if (choice === "accepted") {
-      loadClarity();
+      startClarity();
     }
   }
 
-  const savedConsent = localStorage.getItem("cookie_consent");
-  if (savedConsent === "accepted") {
-    loadClarity();
-  } else if (!savedConsent) {
+  const userConsent = localStorage.getItem("cookie_consent");
+  if (userConsent === "accepted") {
+    startClarity();
+  } else if (!userConsent) {
     document.getElementById("cookie-card").style.display = "block";
   }
 </script>
+
 
 
 
